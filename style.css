@@ -1,0 +1,108 @@
+*{
+    font-family:'roboto',sans-serif;
+    background: #eee;
+}
+____________________________Navbar_____________________________________
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+li a, .dropbtn {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 5px;
+    padding: 14px 20px;
+    color: #ffffff;
+    background-color: #6495ED;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    background-color: #006400;
+}
+_______________________________Gambar slide___________________________________________
+body{
+  margin:0;
+  padding:0;
+  background: #34495e;
+}
+ 
+.slideshow{
+  width: 900px;
+  height: 550px;
+  overflow: hidden;
+}
+ 
+.now{
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.nav{
+  position: absolute;
+  bottom: 20px;
+  left:50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border:3px solid #ff9e02;
+  margin:6px;
+  cursor: pointer;
+}
+.bar:hover{
+  background-color: #ff9e02;
+}
+input[name="radio"]
+{
+  position: absolute;
+  visibility: hidden;
+}
+ 
+.slider{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+ 
+.slide{
+  width: 20%;
+  transition: 0.3s;
+}
+ 
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+ 
+#radio1:checked ~ .sh1{
+  margin-left:0;
+}
+#radio2:checked ~ .sh1{
+  margin-left:-20%;
+}
+#radio3:checked ~ .sh1{
+  margin-left:-40%;
+}
